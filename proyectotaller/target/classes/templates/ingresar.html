@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" th:href="@{/css/iniciarsesion.css}" />
+    <link rel="stylesheet" th:href="@{/css/base.css}" />
+
+    <title>Matiz</title>
+  </head>
+  <body>
+    <div th:replace="~{fragmentos :: header}"></div>
+
+    <section class="tarjeta">
+      <h1 class="titulo">Inicia sesión</h1>
+
+      <form class="formulario">
+        <label for="username">Nombre de usuario</label>
+        <input type="text" id="username" name="username" required />
+
+        <label for="contrasena">Contraseña</label>
+        <input type="password" id="contrasena" name="contrasena" required />
+
+        <button type="submit">Entrar</button>
+      </form>
+      <p>
+        ¿No tienes cuenta? <a href="/crear-cuenta" class="crear">Créala.</a>
+      </p>
+    </section>
+  </body>
+</html>

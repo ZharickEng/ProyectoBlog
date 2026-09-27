@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" th:href="@{/css/inicioestilo.css}" />
+    <link rel="stylesheet" th:href="@{/css/base.css}" />
+
+    <title>Matiz</title>
+  </head>
+  <body>
+    <div th:replace="~{fragmentos :: header}"></div>
+
+    <section class="tarjeta-presentacion">
+      <h1>Matiz</h1>
+      <h2>Donde las ideas encuentran su color.</h2>
+      <p>
+        Una plataforma de blogs de diseño, cultura contemporánea y reflexiones
+        de vida. Diseñada para mentes creativas que buscan desconectar del ruido
+        y conectar con las buenas palabras.
+      </p>
+      <a class="crear-blog" href="/blog">¡Crea tu blog!</a>
+    </section>
+
+    <section class="tarjeta-de-opciones">
+      <p>Filtra por tus intereses creativos</p>
+      <nav aria-label="Filtro por categoría">
+        <ul>
+          <li><a href="/">Diseños y espacios</a></li>
+          <li><a href="/cultura-visual">Cultura visual</a></li>
+          <li><a href="/artesania-digital">Artesania digital</a></li>
+          <li><a href="/estilo-de-vida">Estilo de vida</a></li>
+          <li><a href="/arquitectura-de-ideas">Arquitectura de ideas</a></li>
+          <li><a href="/letras-libres">Letras libres</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="diseños-y-espacios">
+      <ul>
+        <li>
+          <img
+            src="/img/figuras-artesanales.webp"
+            alt="Figuras artesanales de resina kawaii"
+            width="1200"
+            height="1200"
+          />
+        </li>
+        <li>
+          <img
+            src="/img/figura-pato.webp"
+            alt="Figura de resina de un pato"
+            width="736"
+            height="736"
+          />
+        </li>
+        <li>
+          <img
+            src="/img/platos-resina.webp"
+            alt="Platos de resina con figuras de pato"
+            width="564"
+            height="556"
+          />
+        </li>
+      </ul>
+    </section>
+
+    <section class="tarjeta-de-escritores">
+      <h2>¿Tienes una historia que merece ser leída con calma?</h2>
+      <p>
+        En Matiz valoramos la profundidad antes que la velocidad. Únete a
+        nuestro colectivo de escritores independientes y comparte tu perspectiva
+        sobre diseño, arte y vida cotidiana con una audiencia consciente.
+      </p>
+      <ul>
+        <li><a href="/blog">Comenzar a escribir</a></li>
+        <li><a href="#">Guia de publicación</a></li>
+      </ul>
+    </section>
+
+    <div th:replace="~{fragmentos :: footer}"></div>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+  <body>
+    <header th:fragment="header" class="tarjeta-superior">
+      <nav aria-label="Menú principal">
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="#">Términos y condiciones</a></li>
+        </ul>
+        <ul>
+          <li class="boton-de-inicio">
+            <a href="/ingresar">Inicia sesión</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <footer th:fragment="footer">
+      <div class="tarjeta-inferior">
+        <h2>Matiz</h2>
+        <p>
+          La plataforma editorial dedicada a la lentitud analÍtica, la
+          curiosidad estética y el intercambio de ideas sin distracciones.
+        </p>
+        <p>&copy; 2026 Matiz. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+:root {
+  --color-fondo: #ffeaed;
+  --color-principal: #ffc2a1;
+  --color-secundario: #ff9170;
+  --color-texto: #b77372;
+  --fuente-titulo: Georgia;
+  --fuente-texto: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-fondo);
+  width: 100vw;
+  height: 100vh;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px auto;
+  padding: 32px 24px;
+  border: 3px solid var(--color-secundario);
+  border-radius: 10px;
+  max-width: 320px;
+}
+
+.titulo {
+  font-size: 2rem;
+  padding-bottom: 10px;
+  color: var(--color-secundario);
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-secundario);
+}
+
+.formulario label {
+  margin: 24px;
+  font-size: 1.5rem;
+}
+
+.formulario input {
+  width: 80%;
+  padding: 4px;
+  margin-bottom: 20px;
+  transition: backgorund-color 0.4s ease-in-out;
+}
+.formulario input:focus {
+  background-color: var(--color-principal);
+}
+
+.formulario button {
+  font-size: 1.2rem;
+  margin: 15px;
+  padding: 12px;
+  background-color: var(--color-fondo);
+  color: var(--color-secundario);
+  transition: background-color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+  border: 2px solid var(--color-secundario);
+  border-radius: 15px;
+  white-space: nowrap;
+}
+
+.formulario button:hover {
+  background-color: var(--color-secundario);
+  color: var(--color-fondo);
+}
+
+a {
+  color: var(--color-secundario);
+  text-decoration: none;
+}
+
+.formulario p {
+  color: var(--color-texto);
+}

@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-fondo);
+}
+
+.tarjeta-superior {
+  border-bottom: 2px solid var(--color-secundario);
+  margin: 0 20px;
+}
+.tarjeta-superior nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tarjeta-superior ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+.boton-de-inicio a {
+  padding: 12px;
+  border: 2px solid var(--color-secundario);
+  border-radius: 20px;
+  color: var(--color-secundario);
+  transition: background-color 0.4s ease-in-out;
+  white-space: nowrap;
+}
+
+.boton-de-inicio a:hover {
+  background-color: var(--color-secundario);
+  color: var(--color-fondo);
+}
+
+a,
+li {
+  text-decoration: none;
+  margin: 24px;
+  color: var(--color-secundario);
+  transition: transform 0.2s ease-out;
+}
+
+a:hover,
+li:hover {
+  transform: translateY(-4px);
+}
+
+.tarjeta-inferior {
+  margin: 32px;
+  padding: 32px;
+  border-radius: 32px;
+  background-color: var(--color-texto);
+}
+
+.tarjeta-inferior h2 {
+  color: var(--color-fondo);
+  font-size: 4rem;
+}
+
+.tarjeta-inferior p {
+  color: var(--color-fondo);
+  font-size: 1.5rem;
+  max-width: 500px;
+  padding-bottom: 5px;
+}
+
+.tarjeta-inferior footer {
+  color: var(--color-fondo);
+}
